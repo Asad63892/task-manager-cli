@@ -37,6 +37,16 @@ public class TaskManager {
 
     // Features will be implemented by team members
     static void addTask() {}
-    static void showTasks() {}
+    static void showTasks() {
+    if (tasks.isEmpty()) {
+        System.out.println("No tasks available.");
+        return;
+    }
+    System.out.println("Tasks:");
+    for (int i = 0; i < tasks.size(); i++) {
+        System.out.println((i + 1) + ". " + tasks.get(i));
+    }
+}
+
     static void deleteTask() {}
 }

@@ -36,6 +36,8 @@ public class TaskManager {
     }
 
     // Features will be implemented by team members
+    static void addTask() {}
+    static void showTasks() {
     static void addTask() { 
 
     System.out.print("Enter task: "); 
